@@ -45,11 +45,6 @@ nav {
     text-decoration: underline;
 }
 
-.name {
-    color: #F5F5F5;
-    font-family: CedarvilleCursive;
-}
-
 .hero {
     background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
     url("images/food-display.jpg");
@@ -285,6 +280,7 @@ nav {
 
 .f-svg {
     width: 20px;
+    color: #BDBDBD;
 }
 
 .right-f {
