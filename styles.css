@@ -1,0 +1,311 @@
+@font-face {
+    font-family: CedarvilleCursive;
+    src: url(fonts/CedarvilleCursive-Regular.ttf);
+}
+
+@font-face {
+    font-family: RobotoSlab;
+    src: url(fonts/RobotoSlab-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: AlexBrush;
+    src: url(fonts/AlexBrush-Regular.ttf);
+}
+
+body {
+    margin: 0;
+    background-color: #1A1A1A;
+}
+
+nav {
+    width: 100%;
+    height: 50px;
+    background: #121212;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    z-index: 1000;
+}
+
+#logo {
+    width: 50px;
+}
+
+.nav-contact {
+    color: #F5F5F5;
+    font-size: 14px;
+    margin-right: 10px;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.nav-contact:hover {
+    text-decoration: underline;
+}
+
+.name {
+    color: #F5F5F5;
+    font-family: CedarvilleCursive;
+}
+
+.hero {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("images/food-display.jpg");
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.hero::before {
+    content: "";
+    inset: 0;
+    background: rgba(0, 0, 0, 0.45);
+}
+
+.headline {
+    font-family: RobotoSlab;
+    color: #F5F5F5;
+    text-shadow: 0 0 10px black;
+}
+
+.order-btn {
+    /* background: #D4Af37; */
+    background: rgba(255, 255, 255, 0.2);
+    border: none;
+    padding: 5px 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    font-weight: 500;
+    font-family: RobotoSlab;
+    cursor: pointer;
+    box-shadow: 0 0 10px black;
+    transition: 0.2s;
+    color: #F5F5F5;
+}
+
+.order-btn:hover {
+    background: #eecc0c;
+    transform: scale(1.1);
+}
+
+.i1 {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#about {
+    scroll-margin-top: 100px;
+}
+
+.card-heading {
+    color: #F5F5F5;
+    font-family: RobotoSlab;
+}
+
+.item {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+#menu {
+    scroll-margin-top: 100px;
+}
+
+.menu-card {
+    background: #1E1E1E;
+    width: 300px;
+    min-height: 500px;
+    display: flex;
+    flex-direction: column;
+    color: #F5F5F5;
+    cursor: pointer;
+    border-radius: 10px;
+    font-family: RobotoSlab;
+    overflow: hidden;
+    transition: 0.2s;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    border-radius: 12px;
+}
+
+.menu-card:hover {
+    background: #eecc0c;
+    transform: scale(1.1);
+}
+
+.item-img {
+    width: 90%;
+    margin: 10px auto 0 auto;
+    display: block;
+    border-radius: 10px;
+}
+
+.item-name {
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
+    margin: 15px 0 10px;
+}
+
+.item-txt {
+    color: #BDBDBD;
+    padding: 0 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    flex-grow: 1;
+}
+
+.item-price {
+    padding: 15px;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.about-us {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url(images/aboutus-bg.jpg);
+    width: 100%;
+    height: 400px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 0 3px black;
+}
+
+.au-head {
+    font-family: AlexBrush;
+    font-size: 50px;
+    color: #eecc0c;
+    align-self: center;
+}
+
+.au-txt {
+    color: #F5F5F5;
+    margin: 20px 10px;
+    font-family: RobotoSlab;
+}
+
+.au-resname {
+    color: #eecc0c;
+}
+
+.t1 {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.t-heading {
+    color: #F5F5F5;
+    font-family: RobotoSlab;
+    margin: 30px 0;
+}
+
+.t-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.testimonial {
+    background: #1E1E1E;
+    width: 400px;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.t-avatar {
+    width: 40px;
+    height: 40px;
+    border: 1px solid white;
+    border-radius: 100%;
+    margin: 20px;
+}
+
+.t-name {
+    font-family: RobotoSlab;
+}
+
+.t-txt {
+    margin: 20px;
+    margin-top: 0;
+    color: #F5F5F5;
+    font-family: RobotoSlab;
+}
+
+.tt1 {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    font-size: 15px;
+    color: #F5F5F5;
+}
+
+.footer {
+    width: 100%;
+    height: 40px;
+    background: #121212;
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #BDBDBD;
+    justify-content: space-between;
+}
+
+.left-f {
+    display: flex;
+    gap: 10px;
+    padding: 2px;
+    margin-left: 10px;
+}
+
+.f-txt {
+    color: #BDBDBD;
+    font-size: 10px;
+}
+
+.f-svg {
+    width: 20px;
+    color: #BDBDBD;
+}
+
+.right-f {
+    display: flex;
+    gap: 10px;
+    padding: 2px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.cp-f {
+    width: 100%;
+    height: 40px;
+    background: #121212;
+    display: flex;
+    justify-content: center;
+}
+
+.cpf-txt {
+    color: #BDBDBD;
+    font-size: 12px;
+
+}
