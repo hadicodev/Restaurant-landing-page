@@ -193,7 +193,7 @@ nav {
     background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
     url(images/aboutus-bg.jpg);
     width: 100%;
-    height: 400px;
+    height: auto;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -214,6 +214,7 @@ nav {
     color: #F5F5F5;
     margin: 20px 10px;
     font-family: RobotoSlab;
+    padding-bottom: 15px;
 }
 
 .au-resname {
@@ -275,7 +276,6 @@ nav {
 .filled {
     color: #eecc0c;
 }
-
 .empty {
     color: transparent;
     -webkit-text-stroke: 1px #eecc0c;
