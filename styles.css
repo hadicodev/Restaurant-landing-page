@@ -13,6 +13,11 @@
     src: url(fonts/AlexBrush-Regular.ttf);
 }
 
+@font-face {
+    font-family: Montserrat;
+    src: url(fonts/Montserrat-VariableFont_wght.ttf);
+}
+
 body {
     margin: 0;
     background-color: #1A1A1A;
@@ -31,6 +36,20 @@ nav {
 
 #logo {
     width: 50px;
+}
+
+.n-left {
+    display: flex;
+}
+
+.n-name {
+    color: #F5F5F5;
+    padding: 5px;
+    padding-bottom: 0;
+    width: 100%;
+    font-size: 22px;
+    font-weight: 600;
+    font-family: Montserrat;
 }
 
 .nav-contact {
@@ -137,6 +156,10 @@ nav {
     transform: scale(1.1);
 }
 
+.menu-card:hover .item-txt{
+    color: #FFFFFF;
+}
+
 .item-img {
     width: 90%;
     margin: 10px auto 0 auto;
@@ -238,6 +261,24 @@ nav {
 
 .t-name {
     font-family: RobotoSlab;
+}
+
+.t-stars {
+    margin-left: auto;
+    padding: 5px;
+    display: flex;
+    gap: 2px;
+    font-size: 25px;
+}
+
+/* stars */
+.filled {
+    color: #eecc0c;
+}
+
+.empty {
+    color: transparent;
+    -webkit-text-stroke: 1px #eecc0c;
 }
 
 .t-txt {
