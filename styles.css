@@ -18,6 +18,45 @@
     src: url(fonts/Montserrat-VariableFont_wght.ttf);
 }
 
+@media (max-width: 768px) {
+    .n-name {
+        display: none;
+    }
+
+    #logo {
+        padding-top: 0;
+        padding-bottom: 5px;
+        width: 10px;
+    }
+
+    .contact {
+        flex-direction: column;
+    }
+
+    .contact-l {
+        border-right: none !important;
+        border-bottom: 1px solid #BDBDBD;
+    }
+
+    .contact-l,
+    .contact-r {
+        width: 90% !important;
+        margin: 10px 20px;
+    }
+
+    .socials-links {
+        margin: 5px 0;
+    }
+
+    .testimonial {
+        margin: 0 10px;
+    }
+
+    .clit {
+        font-size: 13px !important;
+    }
+}
+
 body {
     margin: 0;
     background-color: #1A1A1A;
@@ -39,6 +78,8 @@ nav {
 
 .n-left {
     display: flex;
+    align-items: center;
+    
 }
 
 .n-name {
@@ -49,6 +90,7 @@ nav {
     font-size: 21px;
     font-weight: 600;
     font-family: Montserrat;
+    transition: 0.3s;
 }
 
 .nav-contact {
@@ -90,7 +132,6 @@ nav {
 }
 
 .order-btn {
-    /* background: #D4Af37; */
     background: rgba(255, 255, 255, 0.2);
     border: none;
     padding: 5px 10px;
