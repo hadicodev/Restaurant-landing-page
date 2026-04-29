@@ -55,6 +55,18 @@
     .clit {
         font-size: 13px !important;
     }
+
+    .hero {
+        height: 50vh !important;
+    }
+
+    .headline {
+        font-size: 25px;
+    }
+
+    .order-btn {
+        font-size: 14wpx !important;
+    }
 }
 
 body {
